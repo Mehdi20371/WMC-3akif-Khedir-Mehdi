@@ -9,18 +9,21 @@
 
     <h1>Kontaktformular</h1>
 
-    <form action="mailto:lorenzd@spengergasse.at"
+    <form action="KHE260483@spergasse.at"
           method="post"
           enctype="text/plain">
 
         <!-- Texteingabe -->
         <label for="name">Name:</label>
-        <input type="text" id="name" name="Name" required>
+        <input type="text" id="name" name="Name" placeholder="Ihr Name" required>
         <br><br>
-
+        <label for="vorname">Vorname:</label>
+        <input type="text" id="vorname" name="Vorname" placeholder="Ihr Vorname" required>
+        
+        <br><br>
         <!-- E-Mail -->
         <label for="email">E-Mail-Adresse:</label>
-        <input type="email" id="email" name="E-Mail" required>
+        <input type="email" id="email" name="E-Mail" placeholder="Ihre E-Mail-Adresse" required>
         <br><br>
 
         <!-- Radiobutton -->
@@ -46,11 +49,11 @@
         <!-- Dropdown -->
         <label for="klasse">Klasse:</label>
         <select id="klasse" name="Klasse">
-            <option value="1">1. Klasse</option>
-            <option value="2">2. Klasse</option>
-            <option value="3">3. Klasse</option>
-            <option value="4">4. Klasse</option>
-            <option value="5">5. Klasse</option>
+            <option value="1">3AKIF</option>
+            <option value="2">2BKIF</option>
+            <option value="3">3CIF</option>
+            <option value="4">3HIF</option>
+            <option value="5">3AIF</option>
         </select>
 
         <br><br>
@@ -78,7 +81,7 @@
 
         <!-- Weiteres Eingabefeld -->
         <label for="telefon">Telefonnummer:</label>
-        <input type="tel" id="telefon" name="Telefonnummer">
+        <input type="tel" id="telefon" name="Telefonnummer" placeholder="Ihre Telefonnummer">
 
         <br><br>
 
