@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+</head>
+<body>
+
+    <h1>Kontaktformular</h1>
+
+    <form action="mailto:lorenzd@spengergasse.at"
+          method="post"
+          enctype="text/plain">
+
+        <!-- Texteingabe -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name" required>
+        <br><br>
+
+        <!-- E-Mail -->
+        <label for="email">E-Mail-Adresse:</label>
+        <input type="email" id="email" name="E-Mail" required>
+        <br><br>
+
+        <!-- Radiobutton -->
+        <p>Geschlecht:</p>
+
+        <input type="radio" id="m" name="Geschlecht" value="Männlich">
+        <label for="m">Männlich</label>
+
+        <input type="radio" id="w" name="Geschlecht" value="Weiblich">
+        <label for="w">Weiblich</label>
+
+        <input type="radio" id="divers" name="Geschlecht" value="Divers">
+        <label for="divers">Divers</label>
+
+        <br><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="agb" name="AGB" value="Akzeptiert" required>
+        <label for="agb">Ich akzeptiere die Bedingungen.</label>
+
+        <br><br>
+
+        <!-- Dropdown -->
+        <label for="klasse">Klasse:</label>
+        <select id="klasse" name="Klasse">
+            <option value="1">1. Klasse</option>
+            <option value="2">2. Klasse</option>
+            <option value="3">3. Klasse</option>
+            <option value="4">4. Klasse</option>
+            <option value="5">5. Klasse</option>
+        </select>
+
+        <br><br>
+
+        <!-- Mehrfachauswahl -->
+        <label for="interessen">Interessen:</label>
+        <select id="interessen" name="Interessen" multiple>
+            <option value="Programmieren">Programmieren</option>
+            <option value="Webdesign">Webdesign</option>
+            <option value="Datenbanken">Datenbanken</option>
+            <option value="Netzwerke">Netzwerke</option>
+        </select>
+
+        <br><br>
+
+        <!-- Mehrzeiliges Textfeld -->
+        <label for="nachricht">Nachricht:</label><br>
+        <textarea id="nachricht"
+                  name="Nachricht"
+                  rows="6"
+                  cols="50"
+                  placeholder="Geben Sie hier Ihre Nachricht ein..."></textarea>
+
+        <br><br>
+
+        <!-- Weiteres Eingabefeld -->
+        <label for="telefon">Telefonnummer:</label>
+        <input type="tel" id="telefon" name="Telefonnummer">
+
+        <br><br>
+
+        <!-- Absenden -->
+        <button type="submit">Formular absenden</button>
+
+    </form>
+
+</body>
+</html>
