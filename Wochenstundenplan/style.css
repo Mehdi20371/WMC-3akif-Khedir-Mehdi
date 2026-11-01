@@ -1,0 +1,202 @@
+/* Für alle Geräte */
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: right;
+    gap: 25px;
+
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+}
+
+.nav {
+    text-decoration: none;
+    color: #d41132;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.stundenplan {
+    font-size: 12px;    
+    color: #14d83e;
+    padding: 15px;
+    caption-side: top;
+    text-align: center;
+    width: 100%
+
+    
+    
+}
+
+.stundenplan td {
+    border: 1px solid #000;
+    padding: 2px;
+    caption-side: top;
+    text-align: center;
+    schrftgröße: 12px;
+    box-sizing: border-box;4
+
+    width: 10px;
+}
+.stundenplan tr {
+    border: 1px solid #000;
+    padding: 2px;
+    caption-side: top;
+    text-align: center;
+
+    width: 10px;
+}
+
+.stundenplan:hover {
+        color: #b60912  ;
+    }
+
+
+.text2 {
+    font-size: 30px;
+    color: #a81ddf;
+    padding: 15px;
+    margin: 15px;
+    caption-side: top;
+    text-align: center;
+    border: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: bold;
+    border-radius: 15px;
+}
+.text2:hover {
+
+    color: #1033b0;
+       
+}
+.text3 {
+    font-size: 30px;
+    color: #a81ddf;
+    padding: 15px;
+    margin: 15px;
+    caption-side: top;
+    text-align: center;
+    border: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: bold;
+    border-radius: 15px;
+}
+.datum {
+    font-size: 15px;
+    color: #220386;
+    padding: 10px;x;
+    caption-side: top;
+    text-align:
+    border: 2px;
+    font-style: italic;
+    margin: 15px;
+    border-radius: 15px;
+    border: 2px solid #e01111;
+
+}
+#gender {
+      font-size: 15px;
+    color: #220386;
+    padding: 10px;x;
+    caption-side: top;
+    text-align:
+    border: 2px;
+    font-style: italic;
+    margin: 15px;
+    border-radius: 15px;
+    border: 2px solid #e01111;
+}
+p {
+    font-size: 15px;
+    color: #220386;
+    padding: 15px;
+    caption-side: top;
+    text-align:
+    border: 2px;
+    font-style: italic;
+    margin: 15px;
+    border-radius: 15px;
+
+}
+p:hover {
+    color: #6b14d6;
+}   
+
+.text4 {
+    color: #1589db;
+    width: 100%
+}
+input[type="text"], input[type="tel"], input[type="email"], input[type="password"], textarea {
+    box-sizing: border-box;
+    border: 2px solid #e01111;
+    border-radius: 4px;
+}
+
+.submit-button {
+    background-color: #430ef1;
+    color: rgb(15, 199, 171);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-text: #780912;
+     border: 2px solid #b51010;
+}
+.submit-button:hover {
+    background-color: #7a0d1c;
+}   
+.reset-button {
+    background-color: #1612f8;
+    color: rgb(15, 199, 171);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+      border: 2px solid #b51010;
+}
+#fach {
+   background-color: #1612f8;
+    color: rgb(15, 199, 171);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+      border: 2px solid #b51010;
+}
+#fach:hover {
+    background-color: #7a0d1c;
+}
+.checkbox {
+    background-color: #1612f8;
+    color: rgb(15, 199, 171);
+    padding: 10px 20px;
+    border: 3px solid #e01111;  
+    border-radius: 4px;
+    cursor: pointer;
+      border: 2px solid #b51010;
+}
+
+input[type="checkbox"] {
+    background-color: #e30e31;
+    color: rgb(15, 199, 171);
+    padding: 30px 20px;
+    border: 3px solid #56e61d;  
+    border-radius: 4px;
+    cursor: pointer;
+      border: 2px solid #eb1515;
+}
+input[type="checkbox"]:hover {
+    background-color: #7a0d1c;
+}   
