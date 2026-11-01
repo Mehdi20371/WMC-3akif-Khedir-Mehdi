@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Wochenstundenplan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+      <nav>
+        <ul class="nav">
+            <li><a href="Wochenstundenplan.html">Wochenstundenplan</a></li>
+            <li><a href="Stundenplan.html">Stundenplan</a></li>
+            <li><a href="Kontakt.html">Kontakt</a></li>
+        </ul>
+    </header>
+
+<table border = "2" class="stundenplan">
+
+    <caption class="text2">Wochenstundenplan</caption> 
+    <thead class="text1">  
+        <th>Zeiteg</th>
+        <th>Montag</th>
+        <th>Dienstag</th>
+        <th>Mittwoch</th>
+        <th>Donnerstag</th>
+        <th>Freitag</th>
+         <br> 
+    </thead>
+    <tbody> 
+   <tr>
+       <tr>
+        <td>08:00 - 09:00</td>
+        <td>Mathematik</td>
+        <td>Deutsch</td>
+        <td>Englisch</td>
+        <td>Biologie</td>
+        <td>Sport</td>
+    </tr>
+    <tr>
+        <td>09:00 - 10:00</td>
+        <td>Physik</td>
+        <td>Geschichte</td>
+        <td>Informatik</td>
+        <td>Mathematik</td>
+        <td>Kunst</td>
+    </tr>
+    <tr>
+        <td>10:00 - 11:00</td>
+        <td>Deutsch</td>
+        <td>Englisch</td>
+        <td>Biologie</td>
+        <td>Physik</td>
+        <td>Mathematik</td> 
+    </tbody>
+    </table>
+    <br> <br>
+<h1 class="text3">Fügen Sie Ihre Informationen hinzu</h1>
+
+    <form action="" class="text4">
+         
+        <label for="name">Vorname:</label>
+        <input type="text" id="name" name="Vorname" required  placeholder="Ihre Vorname hier...">
+        <label for="name">Nachname:</label>
+        <input type="text" id="name" name="Nachname" required  placeholder="Ihre Nachname hier...">
+        <label for="geburtsdatum">Geburtsdatum:</label>
+        <input type="text" id="geburtsdatum" name="geburtsdatum" required  placeholder="TT/MM/JJJJ">
+        <br> <br>
+         <label for="email">E-Mail:</label>
+        <input type="email" id="email" name="email" required  placeholder="Ihre E-Mail hier...">
+        <label for="phone">Telefonnummer:</label>
+        <input type="tel" id="phone" name="phone" required  placeholder="Ihre Telefonnummer hier...">
+<br> <br>
+    <label for="gender">Geschlecht:</label> 
+        <select id="gender" name="gender" required>
+            <option value="">Bitte wählen</option>
+            <option value="male">Männlich</option>
+            <option value="female">Weiblich</option>
+            <option value="other">Andere</option> <br> <br>
+        </select>
+       
+       <br> <br>
+       <datum>
+        <label for="datum">Datum:</label>
+        <input type="date" id="datum" name="datum" required class="datum">  
+        
+        </datum>
+        <br> <br>
+        <textarea id="message" name="message" rows="4" cols="50" placeholder="Ihre Nachricht hier..."></textarea>
+        <b>
+        <br> <br>
+        <select name="fach" id="fach">
+            <option value="mathematik">Mathematik</option>
+            <option value="deutsch">Deutsch</option>
+            <option value="englisch">Englisch</option>
+            <option value="biologie">Biologie</option>
+            <option value="sport">Sport</option>
+            <option value="physik">Physik</option>
+        </select>
+
+        <br> <br>
+        <input type="submit" value="Absenden" onclick="alert('Vielen Dank für Ihre Nachricht!')"class="submit-button">   
+        <input type="reset" value="Zurücksetzen" onclick="alert('Formular zurückgesetzt!')" class="reset-button">   
+         
+        <br> <br>
+        <input type="checkbox" id="checkbox" name="checkbox" required>
+         <label for="checkbox" class="checkbox">Ich stimme den Datenschutzbestimmungen zu.</label>    
+        
+    </form>
+
+    <footer>
+        <p>Die Stundenplan wurde von Khedir Mehdi erstellt.</p>     
+    </footer>
+</body>
+</html>
