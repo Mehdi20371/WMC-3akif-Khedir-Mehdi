@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CSS Sidebar</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <nav><img src="New Yorker.png" alt="Logo" class="logo2"></nav>
+    <p>Black Friday </p>
+    <p>Alle Produkte - 50% gültig bis 28.11.2026</p>
+    
+    <aside class="sidebar">
+
+    <!-- Profile -->
+    <header class="profile">
+      <img src="newyorker.jpg" alt="NEW YORKER" class="newyorker">
+
+      <nav class="details">
+        <p class="name">NEW YORKER</p>
+        <p class="role">Online Bestellungen</p>
+      </nav>
+
+      <i data-lucide="chevron-down" class="icon chevron"></i>
+    </header>
+
+    <!-- Search -->
+    <nav class="search">
+      <input type="text" placeholder="Search dashboard">
+      <i data-lucide="search" class="icon"></i>
+    </nav>
+
+    <!-- Navigation -->
+    <nav class="navigation">
+
+      <a href="#" class="item">
+        <i data-lucide="layout-dashboard" class="icon"></i>
+        <span>Dashboard</span>
+      </a>
+
+      <a href="#" class="item">
+        <i data-lucide="user-round" class="icon"></i>
+        <span>Support</span>
+      </a>
+
+      <a href="#" class="item">
+        <i data-lucide="users-round" class="icon"></i>
+        <span>Customers</span>
+      </a>
+
+      <a href="#" class="item">
+        <i data-lucide="ticket" class="icon"></i>
+        <span>Tickets</span>
+      </a>
+
+      <a href="#" class="item">
+        <i data-lucide="pin" class="icon"></i>
+        <span>Tasks</span>
+        <small class="badge">2</small>
+      </a>
+
+      <a href="#" class="item active">
+        <i data-lucide="network" class="icon"></i>
+        <span>Projects</span>
+      </a>
+
+      <a href="#" class="item">
+        <i data-lucide="mail" class="icon"></i>
+        <span>Application</span>
+      </a>
+
+      <a href="#" class="item">
+        <i data-lucide="user-round-cog" class="icon"></i>
+        <span>User Management</span>
+      </a>
+
+    </nav>
+
+    <!-- Bottom Actions -->
+    <footer class="actions">
+
+      <label class="action" for="theme" title="Theme">
+        <i data-lucide="sun" class="icon sun"></i>
+        <i data-lucide="moon" class="icon moon"></i>
+      </label>
+
+      <button class="action" title="Settings">
+        <i data-lucide="settings" class="icon"></i>
+      </button>
+
+      <button class="action" title="Add">
+        <i data-lucide="plus" class="icon"></i>
+      </button>
+
+      <button class="action" title="Logout">
+        <i data-lucide="log-out" class="icon"></i>
+      </button>
+
+    </footer>
+
+  </aside>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>

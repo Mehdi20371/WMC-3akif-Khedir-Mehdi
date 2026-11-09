@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+#info {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.nice {
+  width: 100px;
+  padding: 2px;
+  border: 2px solid black;
+  margin: 2px;
+}
+
 #titel {
   color: rgb(67, 33, 162);
 }
@@ -45,12 +60,6 @@ button:hover {
   100% {
     color: rgb(142, 9, 238);
   }
-}
-
-#info {
-  border: 1px solid black;
-  padding: 10px;
-  margin: 10px;
 }
 
 div:has(> blockquote) {
