@@ -1,0 +1,364 @@
+/* Grundlegende Formateinstellungen */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Leicht grauer Hintergrund für die Seite */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hauptcontainer-Breite festlegen (ähnlich dem Screenshot) */
+nav, main {
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+/* --- HAUPT-NAVIGATION (Blauer Balken oben) --- */
+nav {
+  background-color: #16426a; /* Dunkelblaues ORF-Design */
+  padding: 15px 20px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* --- REINWEISSER CONTENT-BEREICH --- */
+main {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Header innerhalb von main (Logo und Einleitungstext) */
+main header h1 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+main header h1 a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #16426a;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+/* Das rote ORF-Logo-Auge ausrichten falls nötig */
+#logo {
+  height: 40px;
+  width: 100px
+
+}
+
+/* Einleitungstext (Lead-In) */
+main header p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+/* --- FIGURE & BILD-FORMATIERUNG (Blauer Rahmen) --- */
+figure {
+  margin: 0;
+  padding: 0;
+  background-color: #4a90e2; /* Hellblauer/Mittelblauer Hintergrund für den Rahmen */
+  border: 15px solid #4a90e2; /* Erzeugt den dicken farbigen Rahmen um das Bild */
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block; /* Verhindert unschöne Abstände unter dem Bild */
+}
+
+/* Bildunterschrift im blauen Balken */
+figcaption {
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  padding: 12px 10px 0 10px;
+  line-height: 1.4;
+}
+
+/* Verstecken von Elementen, die nicht im Screenshot sichtbar sind */
+main header h3, section {
+  display: none;
+}
+
+/* --- NEWS SEKTIONEN (Inland & Ausland) --- */
+section {
+  display: block; /* Hebt das "display: none" aus dem vorherigen Schritt auf */
+  margin-top: 40px;
+}
+
+/* Sektions-Überschriften (Inland, Ausland) */
+section h2 {
+  font-size: 26px;
+  color: #000000;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Bereinigung der Listen-Struktur für die Artikel */
+section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section ul li {
+  margin-bottom: 35px;
+}
+
+/* Artikel-Überschriften */
+article h3 {
+  display: block; /* Zeigt die h3-Überschriften wieder an */
+  font-size: 20px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 12px;
+  line-height: 1.3;
+  font-weight: bold;
+}
+
+/* Artikel-Fließtext */
+article p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333333;
+  margin: 0;
+}
+
+
+/* --- ZITAT-BOX (Alexander Van der Bellen) --- */
+/* Hinweis: Für dieses Element musst du ggf. eine passende Klasse (z.B. .quote-container) in dein HTML einfügen */
+.quote-container {
+  display: flex;
+  align-items: center;
+  background-color: #f2f5f9; /* Sehr helles Graublau */
+  border-left: 6px solid #0073e6; /* Kräftiger blauer Balken links */
+  padding: 20px;
+  margin: 40px 0 15px 0;
+}
+
+.quote-container img {
+  width: 120px;
+  height: auto;
+  margin-right: 25px;
+  object-fit: cover;
+}
+
+.quote-container blockquote {
+  font-style: italic;
+  font-size: 18px;
+  color: #111111;
+  margin: 0;
+}
+
+/* Quellenangabe unter der Zitat-Box */
+.quote-author {
+  text-align: right;
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 40px;
+}
+
+.quote-author a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+
+/* --- FOOTER (Adresszeile und blauer Balken) --- */
+footer {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  border-top: 1px solid #cccccc; /* Trennlinie über der Adresse */
+  padding-top: 15px;
+  background-color: #ffffff;
+}
+
+/* Adress-Text linksbündig, kursiv */
+footer address {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444444;
+  padding: 0 40px 20px 40px;
+}
+
+/* Blauer Abschlussbalken im Footer */
+footer .footer-links {
+  background-color: #16426a; /* Gleiches ORF-Blau wie die Navigation oben */
+  padding: 15px 40px;
+  display: flex;
+  gap: 30px;
+}
+
+footer .footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase; /* Schreibt IMPRESSUM und DATENSCHUTZ in Großbuchstaben */
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* Achtung*/
+
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #1a1a1a;
+        }
+
+        /* Blauer Balken ganz oben */
+        .top-blue-bar {
+            background-color: #3b75a6;
+            height: 12px;
+            width: 100%;
+        }
+
+        /* Container für das Formular */
+        .form-wrapper {
+            max-width: 620px;
+            padding: 20px 25px;
+            box-sizing: border-box;
+        }
+
+        .form-group {
+            margin-bottom: 14px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        /* Eingabefelder und Textarea */
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 6px 8px;
+            border: 1px solid #b6b6b6;
+            border-radius: 2px;
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+          height: 120px;
+            width: 120p;
+          
+        }
+
+        /* Checkbox Bereich */
+        .checkbox-container {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            margin: 3px 10px 0 0;
+            padding: 0;
+            width: 14px;
+            height: 14px;
+            flex-shrink: 0;
+        }
+
+        .checkbox-container label {
+            font-size: 12px;
+            line-height: 1.4;
+            color: #1a1a1a;
+        }
+
+        /* Abschicken Button */
+        .btn-submit {
+            background-color: #7f7f7f;
+            color: #ffffff;
+            border: none;
+            padding: 8px 18px;
+            font-size: 14px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+
+        .btn-submit:hover {
+            background-color: #6c6c6c;
+        }
+  
+
+    .header {
+    background-color: #43cc65;
+    color: #ffffff;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Erzwingt die Ausrichtung ganz nach links */
+    text-align: left;        /* Richtet den Text linksbündig aus */
+}
+
+/* Logo-Bereich linksbündig */
+.logo-area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Startet ganz links */
+    gap: 5px;
+    margin-bottom: 12px;
+}
+
+/* Adresse linksbündig */
+.address {
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.4;
+    margin: right 0;
+    text-align: left; /* Verhindert ungewollte Zentrierung */
+}
+
+        
+           
+           
+           
+        
+        
+
+ 
